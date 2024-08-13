@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.navbar {
+    background-color: #007bff;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+.profile-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.profile-section img {
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.project-card, .video-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover, .video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #fff;
+}
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+footer .social-icons a:hover {
+    color: #007bff;
+}
